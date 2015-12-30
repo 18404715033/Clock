@@ -1,17 +1,17 @@
-﻿生成启动时间为 2015/12/29 23:40:15。
+﻿生成启动时间为 2015/12/30 17:01:27。
      1>项目“C:\Users\applen\Desktop\Clock\Clock\Clock.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\Clock.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          所有输出均为最新。
-         c:\VC2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Clock.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Clock.cpp ClockDlg.cpp
+         c:\VC2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Clock.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ClockDlg.cpp
          ClockDlg.cpp
-         正在生成代码...
-         正在编译...
-         Clock.cpp
-         正在生成代码...
+     1>c:\users\applen\desktop\clock\clock\clockdlg.cpp(177): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>c:\users\applen\desktop\clock\clock\clockdlg.cpp(177): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>c:\users\applen\desktop\clock\clock\clockdlg.cpp(177): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>c:\users\applen\desktop\clock\clock\clockdlg.cpp(177): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
        ResourceCompile:
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\Clock.res" Clock.rc 
+         所有输出均为最新。
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
@@ -33,4 +33,4 @@
 
 生成成功。
 
-已用时间 00:00:00.76
+已用时间 00:00:00.57

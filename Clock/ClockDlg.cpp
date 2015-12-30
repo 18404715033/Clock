@@ -6,6 +6,7 @@
 #include "Clock.h"
 #include "ClockDlg.h"
 #include "afxdialogex.h"
+#include "cmath"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -159,12 +160,22 @@ void CClockDlg::OnBnClickedan()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	CClientDC dc(this);
-	dc.SetWindowOrg(0-150,0-150);
+	dc.SetWindowOrg(0-263,0-145);
 	CPen *oldpen;
-	CPen pen(PS_SOLID,3,RGB(0,0,255));
+	CPen pen(PS_SOLID,3,RGB(0,255,255));
 	oldpen=dc.SelectObject(&pen);
 	dc.Ellipse(-100,100,100,-100);
-	dc.Ellipse(-5,-5,5,5);
+	dc.Ellipse(-1,-1,1,1);
+	dc.TextOutW(90,-8,L"3");
+	dc.TextOutW(-98,-8,L"9");
+	dc.TextOutW(-8,-99,L"12");
+	dc.TextOutW(-2,83,L"6");
+	for(int i=0;i<12;i++)
+	{
+		double l=95,ag=i*3.1415926/6;
+        double a=l*sin(ag)+1,b=-l*cos(ag)+1,c=l*sin(ag)-1,d=-l*cos(ag)-1;
+		dc.Ellipse(a,b,c,d);
+	}
 }
 
 
